@@ -1,0 +1,214 @@
+{
+  "config": {
+    "seed": 42,
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "sequence_length": 128,
+    "batch_size": 16,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "gradient_clip": 1.0,
+    "tol": 0.0001,
+    "patience": 3
+  },
+  "architecture": {
+    "embedding_dim": 100,
+    "hidden_dim": 256
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train": {
+        "cross_entropy": 6.303144375869933,
+        "perplexity": 546.2869438418297,
+        "targets": 1358941
+      },
+      "validation": {
+        "cross_entropy": 5.872357382946775,
+        "perplexity": 355.08506587253936,
+        "targets": 271132
+      },
+      "train_seconds": 21.094039499992505,
+      "validation_seconds": 1.5138878999860026,
+      "epochs_without_significant_improvement": 0
+    },
+    {
+      "epoch": 2,
+      "train": {
+        "cross_entropy": 5.80267275978248,
+        "perplexity": 331.18355211270637,
+        "targets": 1358941
+      },
+      "validation": {
+        "cross_entropy": 5.662938877917974,
+        "perplexity": 287.99377862842215,
+        "targets": 271132
+      },
+      "train_seconds": 20.89599350001663,
+      "validation_seconds": 1.5196289000159595,
+      "epochs_without_significant_improvement": 0
+    },
+    {
+      "epoch": 3,
+      "train": {
+        "cross_entropy": 5.5846388975433126,
+        "perplexity": 266.30410230944574,
+        "targets": 1358941
+      },
+      "validation": {
+        "cross_entropy": 5.5402390504930485,
+        "perplexity": 254.73888763727845,
+        "targets": 271132
+      },
+      "train_seconds": 20.925770899979398,
+      "validation_seconds": 1.5755306000064593,
+      "epochs_without_significant_improvement": 0
+    },
+    {
+      "epoch": 4,
+      "train": {
+        "cross_entropy": 5.420626196129008,
+        "perplexity": 226.02061142945362,
+        "targets": 1358941
+      },
+      "validation": {
+        "cross_entropy": 5.466309643673907,
+        "perplexity": 236.58549500250803,
+        "targets": 271132
+      },
+      "train_seconds": 21.244224599999143,
+      "validation_seconds": 1.5011666000063997,
+      "epochs_without_significant_improvement": 0
+    },
+    {
+      "epoch": 5,
+      "train": {
+        "cross_entropy": 5.288987986986512,
+        "perplexity": 198.1428008161994,
+        "targets": 1358941
+      },
+      "validation": {
+        "cross_entropy": 5.413198403620054,
+        "perplexity": 224.34799683222815,
+        "targets": 271132
+      },
+      "train_seconds": 20.958471000019927,
+      "validation_seconds": 1.50049940001918,
+      "epochs_without_significant_improvement": 0
+    },
+    {
+      "epoch": 6,
+      "train": {
+        "cross_entropy": 5.179053500891273,
+        "perplexity": 177.51471393553012,
+        "targets": 1358941
+      },
+      "validation": {
+        "cross_entropy": 5.381101223081032,
+        "perplexity": 217.2613970026787,
+        "targets": 271132
+      },
+      "train_seconds": 21.857406700000865,
+      "validation_seconds": 1.5765475000080187,
+      "epochs_without_significant_improvement": 0
+    },
+    {
+      "epoch": 7,
+      "train": {
+        "cross_entropy": 5.086993154920932,
+        "perplexity": 161.90231425356592,
+        "targets": 1358941
+      },
+      "validation": {
+        "cross_entropy": 5.3634904838066655,
+        "perplexity": 213.4687568042189,
+        "targets": 271132
+      },
+      "train_seconds": 21.071306700003333,
+      "validation_seconds": 1.493524300021818,
+      "epochs_without_significant_improvement": 0
+    },
+    {
+      "epoch": 8,
+      "train": {
+        "cross_entropy": 5.006515932675816,
+        "perplexity": 149.3833667265703,
+        "targets": 1358941
+      },
+      "validation": {
+        "cross_entropy": 5.35634409479285,
+        "perplexity": 211.94866408213167,
+        "targets": 271132
+      },
+      "train_seconds": 20.60067029998754,
+      "validation_seconds": 1.470775900001172,
+      "epochs_without_significant_improvement": 0
+    },
+    {
+      "epoch": 9,
+      "train": {
+        "cross_entropy": 4.935951955477187,
+        "perplexity": 139.20559700722032,
+        "targets": 1358941
+      },
+      "validation": {
+        "cross_entropy": 5.355656722397324,
+        "perplexity": 211.80302648054078,
+        "targets": 271132
+      },
+      "train_seconds": 20.55274929999723,
+      "validation_seconds": 1.490334800007986,
+      "epochs_without_significant_improvement": 0
+    },
+    {
+      "epoch": 10,
+      "train": {
+        "cross_entropy": 4.872334636831869,
+        "perplexity": 130.6255243445361,
+        "targets": 1358941
+      },
+      "validation": {
+        "cross_entropy": 5.3590453707165695,
+        "perplexity": 212.52196988545046,
+        "targets": 271132
+      },
+      "train_seconds": 20.979171199986013,
+      "validation_seconds": 1.4798336999956518,
+      "epochs_without_significant_improvement": 1
+    },
+    {
+      "epoch": 11,
+      "train": {
+        "cross_entropy": 4.815442038785279,
+        "perplexity": 123.40134843791395,
+        "targets": 1358941
+      },
+      "validation": {
+        "cross_entropy": 5.367772077101168,
+        "perplexity": 214.3847026564845,
+        "targets": 271132
+      },
+      "train_seconds": 20.749618600006215,
+      "validation_seconds": 1.5893635000102222,
+      "epochs_without_significant_improvement": 2
+    },
+    {
+      "epoch": 12,
+      "train": {
+        "cross_entropy": 4.762893287703554,
+        "perplexity": 117.0841945691517,
+        "targets": 1358941
+      },
+      "validation": {
+        "cross_entropy": 5.376891518058432,
+        "perplexity": 216.3487130215218,
+        "targets": 271132
+      },
+      "train_seconds": 20.910789499990642,
+      "validation_seconds": 1.5390855000005104,
+      "epochs_without_significant_improvement": 3
+    }
+  ],
+  "epochs_completed": 12,
+  "stop_reason": "early_stopping"
+}

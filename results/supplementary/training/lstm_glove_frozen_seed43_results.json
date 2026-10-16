@@ -1,0 +1,81 @@
+{
+  "model": "lstm_glove_frozen_seed43",
+  "config": {
+    "seed": 43,
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "sequence_length": 128,
+    "batch_size": 16,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "gradient_clip": 1.0,
+    "tol": 0.0001,
+    "patience": 3
+  },
+  "architecture": {
+    "embedding_dim": 100,
+    "hidden_dim": 256
+  },
+  "best_epoch": 11,
+  "epochs_completed": 14,
+  "stop_reason": "early_stopping",
+  "context_policy": "Independent chunks; all review targets scored once; recurrent state resets between chunks.",
+  "hardware": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.12.13",
+    "torch": "2.14.0+cu130"
+  },
+  "trainable_parameters": 5506592,
+  "checkpoint_bytes": 30369081,
+  "training_seconds": 295.49761960003525,
+  "validation_seconds": 21.690039200009778,
+  "validation": {
+    "cross_entropy": 5.171384541463545,
+    "perplexity": 176.15856755887702,
+    "targets": 271132
+  },
+  "test": {
+    "cross_entropy": 5.164422435682217,
+    "perplexity": 174.93639237037638,
+    "targets": 277278
+  },
+  "generation": {
+    "temperature": 1.0,
+    "top_k": null,
+    "top_p": null,
+    "max_new_tokens": 40,
+    "stop_on_eos": true,
+    "samples": [
+      {
+        "prompt": "the movie was",
+        "continuation": "second and worst film , altogether , just even hear what my spell compassion its time video can screams , and the action itself \" real film \" which should improve racism and not never explained 7 % pack .",
+        "seed": 43
+      },
+      {
+        "prompt": "i really enjoyed",
+        "continuation": "so . one i recall this documentary my people would because but what shows series on a bit blown down . is another member picked finally up , some i was really wanted for creating more .",
+        "seed": 44
+      },
+      {
+        "prompt": "the story begins with",
+        "continuation": "an canadian empire <unk> , brady <unk> , gino <unk> and zu or <unk> her head hall is among in his relationships , but even is in descent of the english \" . <unk> \" , \" <unk> . \"",
+        "seed": 45
+      }
+    ]
+  },
+  "inference": {
+    "workload": "First 10000 test targets; teacher-forced scoring including log loss",
+    "targets": 10000,
+    "batch_size": 16,
+    "warmup_runs": 1,
+    "repeat_seconds": [
+      0.049493900005472824,
+      0.05027229999541305,
+      0.054903099982766435
+    ],
+    "median_seconds": 0.05027229999541305,
+    "targets_per_second": 198916.6996718356
+  }
+}

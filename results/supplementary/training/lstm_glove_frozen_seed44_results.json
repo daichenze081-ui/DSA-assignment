@@ -1,0 +1,81 @@
+{
+  "model": "lstm_glove_frozen_seed44",
+  "config": {
+    "seed": 44,
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "sequence_length": 128,
+    "batch_size": 16,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "gradient_clip": 1.0,
+    "tol": 0.0001,
+    "patience": 3
+  },
+  "architecture": {
+    "embedding_dim": 100,
+    "hidden_dim": 256
+  },
+  "best_epoch": 10,
+  "epochs_completed": 13,
+  "stop_reason": "early_stopping",
+  "context_policy": "Independent chunks; all review targets scored once; recurrent state resets between chunks.",
+  "hardware": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.12.13",
+    "torch": "2.14.0+cu130"
+  },
+  "trainable_parameters": 5506592,
+  "checkpoint_bytes": 30369081,
+  "training_seconds": 273.2949330000265,
+  "validation_seconds": 19.679248700034805,
+  "validation": {
+    "cross_entropy": 5.15170821647182,
+    "perplexity": 172.72629235003242,
+    "targets": 271132
+  },
+  "test": {
+    "cross_entropy": 5.141948128815552,
+    "perplexity": 171.04866879007122,
+    "targets": 277278
+  },
+  "generation": {
+    "temperature": 1.0,
+    "top_k": null,
+    "top_p": null,
+    "max_new_tokens": 40,
+    "stop_on_eos": true,
+    "samples": [
+      {
+        "prompt": "the movie was",
+        "continuation": "so bad because i need to raise my people effects because the action shows were on a person look . . is another member picked finally and the makers onto all pretty rapidly , and late .",
+        "seed": 44
+      },
+      {
+        "prompt": "i really enjoyed",
+        "continuation": "the canadian marketplace store , brady our script is <unk> and definition or how her lines with is among decent attempt to watch this movie is in descent of the english \" god's \" larry who as <unk> . in",
+        "seed": 45
+      },
+      {
+        "prompt": "the story begins with",
+        "continuation": "<unk> ( world plot ) . witchcraft and this several were cast members sent all in annoying of this game of the 80 % of time or apartments here as think andy duvall do not true rite from powell her",
+        "seed": 46
+      }
+    ]
+  },
+  "inference": {
+    "workload": "First 10000 test targets; teacher-forced scoring including log loss",
+    "targets": 10000,
+    "batch_size": 16,
+    "warmup_runs": 1,
+    "repeat_seconds": [
+      0.0494503999943845,
+      0.04827239998849109,
+      0.050108600000385195
+    ],
+    "median_seconds": 0.0494503999943845,
+    "targets_per_second": 202222.83340752719
+  }
+}

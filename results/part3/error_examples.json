@@ -1,0 +1,90 @@
+{
+  "lstm": [
+    {
+      "test_index": 605,
+      "true_label": 0,
+      "predicted_label": 1,
+      "confidence": 0.9965134263038635,
+      "text": "Great premise, poor execution. Cast of great actors is watered down into a poorly written, poorly directed, poorly edited, waste of film. Only redeeming quality is the numerous shots of the food.<br /><br />Joan Chen, Mercedes Ruehl, Kyra Sedgwick, and Alfre Woodard should fire their agents."
+    },
+    {
+      "test_index": 987,
+      "true_label": 0,
+      "predicted_label": 1,
+      "confidence": 0.9953815937042236,
+      "text": "I really liked this quirky movie. The characters are not the bland beautiful people that show up in so many movies and on TV. It has a realistic edge, with a captivating story line. The main title sequence alone makes this movie fun to watch."
+    },
+    {
+      "test_index": 83,
+      "true_label": 0,
+      "predicted_label": 1,
+      "confidence": 0.9649364948272705,
+      "text": "This version is very painful to watch. All of the acting is very stilted but especially that of Norma Shearer who is still acting as though she were in a silent movie instead of a talkie. Check out the 1937 version with Joan Crawford, Robert Montgomery and William Powell which is much more entertaining."
+    },
+    {
+      "test_index": 447,
+      "true_label": 1,
+      "predicted_label": 0,
+      "confidence": 0.9958787560462952,
+      "text": "In all this dogma fuzz, please note that this is the Danish masterpiece of the 20th century. The humour, the fate, the sorrow is so clean - so simple - so touching.<br /><br />This movie is a masterpiece. Go see it. There's nothing more to say."
+    },
+    {
+      "test_index": 226,
+      "true_label": 1,
+      "predicted_label": 0,
+      "confidence": 0.9820572137832642,
+      "text": "This film is hilarious. Brilliant comedy, but only because of one actor. Chris Farley. The best 'comedy-actor' I have ever seen. It's something special about him. He is just so funny.<br /><br />What a shame he is not with us anymore. He will sorely be missed."
+    },
+    {
+      "test_index": 66,
+      "true_label": 1,
+      "predicted_label": 0,
+      "confidence": 0.9463517069816589,
+      "text": "A touching movie. It is full of emotions and wonderful acting. I could have sat through it a second time."
+    }
+  ],
+  "transformer": [
+    {
+      "test_index": 46,
+      "true_label": 0,
+      "predicted_label": 1,
+      "confidence": 0.9845046997070312,
+      "text": "Leon Errol handles his double role of Uncle Matt Lindsay and Lord Basil Epping superbly, but I have trouble liking the \"Mexican Spitfire\" Series because they all are contrived to produce mistaken identities, and these are telegraphed way in advance. Errol is funny as the stuffy Lord Epping, but I would have preferred a lot more wit and much less repetition. <br /><br />"
+    },
+    {
+      "test_index": 820,
+      "true_label": 0,
+      "predicted_label": 1,
+      "confidence": 0.8938696980476379,
+      "text": "In the 50's, a gay photographer called Bob Mizer (Daniel MacIvor) founded an agency of male models, releasing a muscle magazine called \"Physique Pictorial\" and movie of men, and many of the models became prostitutes. \"Beefcake\" shows the rise and fall of this pervert.<br /><br />Alternating footages from the 50's, testimony of many models and Bob Mizer himself in the present days, the director Thom Fitzgerald used this subterfuge to show naked men and lots of penis along 93 minutes running time, in a complete bad taste and very silly crap. I have never heard anything about this morally corrupt Bob Mizer and I do not know what AMG is. In my opinion, only gay and very specific audiences might like the theme of this boring and pretentious movie. My vote is two.<br /><br />Title (Brazil): \"Carne Fresca\" (\"Fresh Meat\")"
+    },
+    {
+      "test_index": 884,
+      "true_label": 0,
+      "predicted_label": 1,
+      "confidence": 0.8897021412849426,
+      "text": "This movie is way too long. I lost interest about one hour into the story. Saratoga Trunk tells the story of Ingrid Bergman, who is an the child of a prominent New Orleans man and his mistress. After her mother dies in Paris, Bergman comes back to New Orleans to scandalize her father's \"legitimate\" family and to blackmail them. She meets Gary Cooper, who is likewise seeking revenge against the railroad tycoons who cheated his father out of his land in Texas. She draws him into her schemes, and the movie climaxes at a Saratoga resort. Long and boring, but worth watching if you are a Bergman or Cooper fan. The midget Cupidon provides the only bright spot in this meandering story."
+    },
+    {
+      "test_index": 328,
+      "true_label": 1,
+      "predicted_label": 0,
+      "confidence": 0.9653357267379761,
+      "text": "I really liked this one. (SPOILERS??) It had a really good plot, the main female in this movie is really kewl.<br /><br />Despite the fact that she's the only one left alive and her lover dead, it seemed to be much like Ninja Scroll. Another kick ass movie. ;)<br /><br />Watch it in japanese with subtitles. I don't know where the idiots who learned to speak english are, but for some reason all dubs get an F in translation techniques. The subtitles are more correct.<br /><br />9/10<br /><br />Quality: 7/10 Entertainment: 10/10 Replayable: 9/10"
+    },
+    {
+      "test_index": 500,
+      "true_label": 1,
+      "predicted_label": 0,
+      "confidence": 0.9259913563728333,
+      "text": "WOW I Love this movie. This is definitely added to my list of Ghetto Movies.<br /><br />Juice - Starring Tupac 'I don't giva F***' Menace II Society - O-Dawg 'I'll smoke Anybody, I just don't giva F****' New Jersey Drive - Hey they steal cars in broad daylight they obviously don't giva f***<br /><br />New Jersey Drive is the best hood movie ever. It is at the top of the list, menace II society is second, and juice is third, Clockers is really stupid.<br /><br />The soundtrack for New Jersey Drive is Pwnage too Mac Mall & Young Lay - All about my fetti is heard through out the movie.<br /><br />Lords of the underground - Burn rubber, another good song, and so is Ill & Al Scratch - don't shut down on a player<br /><br />If your a fan of GTA-SA you'll freaking love this movie, AND The amazing soundtrack. The soundtrack is basically Rap about stealing cars ^_^ SWEETTTT Movie!"
+    },
+    {
+      "test_index": 11,
+      "true_label": 1,
+      "predicted_label": 0,
+      "confidence": 0.9244856834411621,
+      "text": "<br /><br />***************************MILD SPOILERS AHEAD**************************<br /><br />We Dive at Dawn is an English made movie with John Mills in the lead role. The second time I watched the DVD version was on a big screen TV and I must say the movie is better than I thought the first time I saw it on the samll screen. May be it was the big screen viewing that helped?<br /><br />I still say the first few segments of the movie are muddled, but once the submarine leaves the dock and begins its mission, the movie takes off too! The search for the German battleship named the Brandenburg and the adventures which went along with it were absorbing and the detail shown in the movie are interesting!<br /><br />I'm increasing my rating to 7/10. If you enjoy WW II films, I think you'll find this one interesting once the submarine gets underway. Some of the men on the sub have quite a sense of humor, too!"
+    }
+  ]
+}

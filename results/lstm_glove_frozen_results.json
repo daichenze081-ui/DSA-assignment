@@ -1,0 +1,83 @@
+{
+  "model": "lstm_glove_frozen",
+  "config": {
+    "seed": 42,
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "sequence_length": 128,
+    "batch_size": 16,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "gradient_clip": 1.0,
+    "tol": 0.0001,
+    "patience": 3
+  },
+  "architecture": {
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "embedding_source": "glove",
+    "frozen": true
+  },
+  "best_epoch": 10,
+  "epochs_completed": 13,
+  "stop_reason": "early_stopping",
+  "context_policy": "Independent chunks; all review targets scored once; recurrent state resets between chunks.",
+  "hardware": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.12.13",
+    "torch": "2.14.0+cu130"
+  },
+  "trainable_parameters": 5506592,
+  "checkpoint_bytes": 30369075,
+  "training_seconds": 491.18570139995427,
+  "validation_seconds": 47.53128629998537,
+  "validation": {
+    "cross_entropy": 5.1789379227645576,
+    "perplexity": 177.49419830303106,
+    "targets": 271132
+  },
+  "test": {
+    "cross_entropy": 5.16718664909405,
+    "perplexity": 175.42062284223795,
+    "targets": 277278
+  },
+  "generation": {
+    "temperature": 1.0,
+    "top_k": null,
+    "top_p": null,
+    "max_new_tokens": 40,
+    "stop_on_eos": true,
+    "samples": [
+      {
+        "prompt": "the movie was",
+        "continuation": "amazing , of course <unk> version of the film feels : \" too bad tv . this is one of the novel feature . even half of the time universal of \" david aames \" has tony martin and boston",
+        "seed": 42
+      },
+      {
+        "prompt": "i really enjoyed",
+        "continuation": "this movie to make this film stars just in my stomach my spell . its time video several weeks , this review was very interesting . i did give mistake one donor write to be jumped 7 years pack .",
+        "seed": 43
+      },
+      {
+        "prompt": "the story begins with",
+        "continuation": "long - pitched film telling us anyone else people would go to blurred . the actors of amin look like like is infected as picked up guard , but i was really surprised , and late .",
+        "seed": 44
+      }
+    ]
+  },
+  "inference": {
+    "workload": "First 10000 test targets; teacher-forced scoring including log loss",
+    "targets": 10000,
+    "batch_size": 16,
+    "warmup_runs": 1,
+    "repeat_seconds": [
+      0.07274649999453686,
+      0.07882749999407679,
+      0.08232169999973848
+    ],
+    "median_seconds": 0.07882749999407679,
+    "targets_per_second": 126859.28135170358
+  }
+}

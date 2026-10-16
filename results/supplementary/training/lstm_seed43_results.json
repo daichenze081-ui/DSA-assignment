@@ -1,0 +1,81 @@
+{
+  "model": "lstm_seed43",
+  "config": {
+    "seed": 43,
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "sequence_length": 128,
+    "batch_size": 16,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "gradient_clip": 1.0,
+    "tol": 0.0001,
+    "patience": 3
+  },
+  "architecture": {
+    "embedding_dim": 100,
+    "hidden_dim": 256
+  },
+  "best_epoch": 9,
+  "epochs_completed": 12,
+  "stop_reason": "early_stopping",
+  "context_policy": "Independent chunks; all review targets scored once; recurrent state resets between chunks.",
+  "hardware": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.12.13",
+    "torch": "2.14.0+cu130"
+  },
+  "trainable_parameters": 7506592,
+  "checkpoint_bytes": 30368887,
+  "training_seconds": 458.2738986000477,
+  "validation_seconds": 44.08248049998656,
+  "validation": {
+    "cross_entropy": 5.153933316786197,
+    "perplexity": 173.11105358486552,
+    "targets": 271132
+  },
+  "test": {
+    "cross_entropy": 5.153475886353791,
+    "perplexity": 173.03188542911224,
+    "targets": 277278
+  },
+  "generation": {
+    "temperature": 1.0,
+    "top_k": null,
+    "top_p": null,
+    "max_new_tokens": 40,
+    "stop_on_eos": true,
+    "samples": [
+      {
+        "prompt": "the movie was",
+        "continuation": "a middle - liner , altogether , just franco is profane \" ; the title makes video can be , and the action sequences were very annoying because it should improve racism and not never explained 7 years ago .",
+        "seed": 43
+      },
+      {
+        "prompt": "i really enjoyed",
+        "continuation": "so how he made the show for my people in the theater . certainly not everyone entirely usually look like critical is another , picked up and , some of all pretty practical french and late .",
+        "seed": 44
+      },
+      {
+        "prompt": "the story begins with",
+        "continuation": "the canadian empire who had brady <unk> for a <unk> manu truck unfolds to her head with forgetting landscapes . as well , this movie is about extremely convincing the english \" . <unk> larry who was <unk> up in",
+        "seed": 45
+      }
+    ]
+  },
+  "inference": {
+    "workload": "First 10000 test targets; teacher-forced scoring including log loss",
+    "targets": 10000,
+    "batch_size": 16,
+    "warmup_runs": 1,
+    "repeat_seconds": [
+      0.17961279998417012,
+      0.13531480001984164,
+      0.13272839999990538
+    ],
+    "median_seconds": 0.13531480001984164,
+    "targets_per_second": 73901.7461396216
+  }
+}

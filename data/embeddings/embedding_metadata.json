@@ -1,0 +1,39 @@
+{
+  "dimension": 100,
+  "seed": 42,
+  "gensim_version": "4.4.0",
+  "own": {
+    "method": "Skip-gram with negative sampling",
+    "config": {
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "sg": 1,
+      "negative": 5,
+      "hs": 0,
+      "sample": 0.001,
+      "epochs": 5,
+      "workers": 1,
+      "seed": 42
+    },
+    "training_seconds": 45.47113380001974,
+    "training_data": "Deduplicated IMDb training split only",
+    "covered_vocabulary_words": 19996,
+    "ordinary_vocabulary_words": 19996,
+    "vocabulary_coverage": 1.0,
+    "training_token_coverage": 0.9811823410325856,
+    "missing_initialization": "Normal(0, 1), fixed seed",
+    "special_initialization": "PAD=zeros; UNK/BOS/EOS=Normal(0, 1)"
+  },
+  "public": {
+    "source": "GloVe 6B, 100 dimensions",
+    "url": "https://nlp.stanford.edu/projects/glove/",
+    "file": "glove.6B.100d.txt",
+    "covered_vocabulary_words": 19042,
+    "ordinary_vocabulary_words": 19996,
+    "vocabulary_coverage": 0.9522904580916183,
+    "training_token_coverage": 0.9652636267016066,
+    "missing_initialization": "Normal(0, 1), fixed seed",
+    "special_initialization": "PAD=zeros; UNK/BOS/EOS=Normal(0, 1)"
+  }
+}

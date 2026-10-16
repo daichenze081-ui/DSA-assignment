@@ -1,0 +1,81 @@
+{
+  "model": "lstm_own_frozen_seed44",
+  "config": {
+    "seed": 44,
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "sequence_length": 128,
+    "batch_size": 16,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "gradient_clip": 1.0,
+    "tol": 0.0001,
+    "patience": 3
+  },
+  "architecture": {
+    "embedding_dim": 100,
+    "hidden_dim": 256
+  },
+  "best_epoch": 12,
+  "epochs_completed": 14,
+  "stop_reason": "early_stopping",
+  "context_policy": "Independent chunks; all review targets scored once; recurrent state resets between chunks.",
+  "hardware": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.12.13",
+    "torch": "2.14.0+cu130"
+  },
+  "trainable_parameters": 5506592,
+  "checkpoint_bytes": 30369061,
+  "training_seconds": 307.08968269999605,
+  "validation_seconds": 23.58141240000259,
+  "validation": {
+    "cross_entropy": 5.158652360966591,
+    "perplexity": 173.9299028682149,
+    "targets": 271132
+  },
+  "test": {
+    "cross_entropy": 5.146639790365513,
+    "perplexity": 171.8530567351079,
+    "targets": 277278
+  },
+  "generation": {
+    "temperature": 1.0,
+    "top_k": null,
+    "top_p": null,
+    "max_new_tokens": 40,
+    "stop_on_eos": true,
+    "samples": [
+      {
+        "prompt": "the movie was",
+        "continuation": "so bad because i watched this documentary . people couldn't go to agree with any of propaganda usually films i think is another member to finally hollywood , but i was really surprised for creating late .",
+        "seed": 44
+      },
+      {
+        "prompt": "i really enjoyed",
+        "continuation": "the canadian of the film . i have never seen the rodent or <unk> her head with the number of leap to watch this movie is about about it again . i cant wait ! time the <unk> version -",
+        "seed": 45
+      },
+      {
+        "prompt": "the story begins with",
+        "continuation": "<unk> ( world is human to witchcraft and this several years later . sent is in annoying of trouble . being the way he wants to stop her here as cowed andy , not to happen all people anymore her",
+        "seed": 46
+      }
+    ]
+  },
+  "inference": {
+    "workload": "First 10000 test targets; teacher-forced scoring including log loss",
+    "targets": 10000,
+    "batch_size": 16,
+    "warmup_runs": 1,
+    "repeat_seconds": [
+      0.05000459999428131,
+      0.05022519998601638,
+      0.049003399995854124
+    ],
+    "median_seconds": 0.05000459999428131,
+    "targets_per_second": 199981.60171551484
+  }
+}

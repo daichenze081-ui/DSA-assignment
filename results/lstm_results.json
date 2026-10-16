@@ -1,0 +1,81 @@
+{
+  "model": "lstm",
+  "config": {
+    "seed": 42,
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "sequence_length": 128,
+    "batch_size": 16,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "gradient_clip": 1.0,
+    "tol": 0.0001,
+    "patience": 3
+  },
+  "architecture": {
+    "embedding_dim": 100,
+    "hidden_dim": 256
+  },
+  "best_epoch": 8,
+  "epochs_completed": 11,
+  "stop_reason": "early_stopping",
+  "context_policy": "Independent chunks; all review targets scored once; recurrent state resets between chunks.",
+  "hardware": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.12.13",
+    "torch": "2.14.0+cu130"
+  },
+  "trainable_parameters": 7506592,
+  "checkpoint_bytes": 30368753,
+  "training_seconds": 236.94484640000155,
+  "validation_seconds": 17.143651900056284,
+  "validation": {
+    "cross_entropy": 5.143468165125751,
+    "perplexity": 171.30886668246626,
+    "targets": 271132
+  },
+  "test": {
+    "cross_entropy": 5.138482830183065,
+    "perplexity": 170.45695988816635,
+    "targets": 277278
+  },
+  "generation": {
+    "temperature": 1.0,
+    "top_k": null,
+    "top_p": null,
+    "max_new_tokens": 40,
+    "stop_on_eos": true,
+    "samples": [
+      {
+        "prompt": "the movie was",
+        "continuation": "amazing , of course , dread . great from the most annoying aspects of our holocaust , the dialogue and the novel , i got half of laughter . i first saw david lynch outside dennis tony novak and boston",
+        "seed": 42
+      },
+      {
+        "prompt": "i really enjoyed",
+        "continuation": "this movie because i could possibly give just a point of my women compassion with the video several times , and the action acting were hilarious , because it should improve off the night on screen 7 dollars pack .",
+        "seed": 43
+      },
+      {
+        "prompt": "the story begins with",
+        "continuation": "a laughable student distinction of anna - speed , effects because the action shows she made a person look down . is another member picked up a baby addict , overcome by robert jared has late . the run where",
+        "seed": 44
+      }
+    ]
+  },
+  "inference": {
+    "workload": "First 10000 test targets; teacher-forced scoring including log loss",
+    "targets": 10000,
+    "batch_size": 16,
+    "warmup_runs": 1,
+    "repeat_seconds": [
+      0.05747619998874143,
+      0.05668470001546666,
+      0.05821649997960776
+    ],
+    "median_seconds": 0.05747619998874143,
+    "targets_per_second": 173985.05819728554
+  }
+}

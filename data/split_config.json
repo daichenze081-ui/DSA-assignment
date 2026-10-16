@@ -1,0 +1,8 @@
+{
+  "dataset": "stanfordnlp/imdb",
+  "seed": 42,
+  "deduplication": "lowercase and collapse whitespace; keep first; official test priority",
+  "train_size": 5000,
+  "validation_size": 1000,
+  "test_size": 1000
+}

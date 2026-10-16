@@ -1,0 +1,81 @@
+{
+  "model": "lstm_own_frozen_seed43",
+  "config": {
+    "seed": 43,
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "sequence_length": 128,
+    "batch_size": 16,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "gradient_clip": 1.0,
+    "tol": 0.0001,
+    "patience": 3
+  },
+  "architecture": {
+    "embedding_dim": 100,
+    "hidden_dim": 256
+  },
+  "best_epoch": 13,
+  "epochs_completed": 16,
+  "stop_reason": "early_stopping",
+  "context_policy": "Independent chunks; all review targets scored once; recurrent state resets between chunks.",
+  "hardware": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.12.13",
+    "torch": "2.14.0+cu130"
+  },
+  "trainable_parameters": 5506592,
+  "checkpoint_bytes": 30369061,
+  "training_seconds": 446.189692200016,
+  "validation_seconds": 37.48255120011163,
+  "validation": {
+    "cross_entropy": 5.153272473428533,
+    "perplexity": 172.996692086646,
+    "targets": 271132
+  },
+  "test": {
+    "cross_entropy": 5.1412741415683225,
+    "perplexity": 170.93342301010674,
+    "targets": 277278
+  },
+  "generation": {
+    "temperature": 1.0,
+    "top_k": null,
+    "top_p": null,
+    "max_new_tokens": 40,
+    "stop_on_eos": true,
+    "samples": [
+      {
+        "prompt": "the movie was",
+        "continuation": "choppy and brown zuniga , and how just lost is what my women were killed for worrying and screams , and the end of the band was great , then after the next destination . i 7 was awesome .",
+        "seed": 43
+      },
+      {
+        "prompt": "i really enjoyed",
+        "continuation": "this movie because i watched this documentary . people couldn't go to what shows this on a person look like movie is another great film . but , some more annoying really things are very late .",
+        "seed": 44
+      },
+      {
+        "prompt": "the story begins with",
+        "continuation": "the canadian of the film . our events is <unk> manu of his <unk> her head with his landscapes . leap lumet's when this movie is about about it the sadness that takes place in time as <unk> . in",
+        "seed": 45
+      }
+    ]
+  },
+  "inference": {
+    "workload": "First 10000 test targets; teacher-forced scoring including log loss",
+    "targets": 10000,
+    "batch_size": 16,
+    "warmup_runs": 1,
+    "repeat_seconds": [
+      0.05442199998651631,
+      0.05135989998234436,
+      0.05745609998120926
+    ],
+    "median_seconds": 0.05442199998651631,
+    "targets_per_second": 183749.21911134498
+  }
+}

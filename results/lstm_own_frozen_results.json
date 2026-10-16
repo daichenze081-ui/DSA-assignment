@@ -1,0 +1,83 @@
+{
+  "model": "lstm_own_frozen",
+  "config": {
+    "seed": 42,
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "sequence_length": 128,
+    "batch_size": 16,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "gradient_clip": 1.0,
+    "tol": 0.0001,
+    "patience": 3
+  },
+  "architecture": {
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "embedding_source": "skipgram",
+    "frozen": true
+  },
+  "best_epoch": 11,
+  "epochs_completed": 14,
+  "stop_reason": "early_stopping",
+  "context_policy": "Independent chunks; all review targets scored once; recurrent state resets between chunks.",
+  "hardware": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.12.13",
+    "torch": "2.14.0+cu130"
+  },
+  "trainable_parameters": 5506592,
+  "checkpoint_bytes": 30368991,
+  "training_seconds": 394.81212370004505,
+  "validation_seconds": 34.43175899999915,
+  "validation": {
+    "cross_entropy": 5.149929310406232,
+    "perplexity": 172.41930163566244,
+    "targets": 271132
+  },
+  "test": {
+    "cross_entropy": 5.135929296998973,
+    "perplexity": 170.02224764691212,
+    "targets": 277278
+  },
+  "generation": {
+    "temperature": 1.0,
+    "top_k": null,
+    "top_p": null,
+    "max_new_tokens": 40,
+    "stop_on_eos": true,
+    "samples": [
+      {
+        "prompt": "the movie was",
+        "continuation": "amazing , of course , dread . great from blood : my girlfriend is on . this time hits and you don't find little laughing half loud wondering . i first saw it was outside of the killer science ,",
+        "seed": 42
+      },
+      {
+        "prompt": "i really enjoyed",
+        "continuation": "this movie because i have decided to just be entertained to my teen horror movies and video several weeks , and the action sequences were hilarious , because ruined should improve any write to be treasured 7 years pack .",
+        "seed": 43
+      },
+      {
+        "prompt": "the story begins with",
+        "continuation": "a laughable <unk> film , but not my fault effects because the action shows series on a bit blown down . is another great film . but , some of all really things are very late .",
+        "seed": 44
+      }
+    ]
+  },
+  "inference": {
+    "workload": "First 10000 test targets; teacher-forced scoring including log loss",
+    "targets": 10000,
+    "batch_size": 16,
+    "warmup_runs": 1,
+    "repeat_seconds": [
+      0.15470060001825914,
+      0.1156071999866981,
+      0.16585950000444427
+    ],
+    "median_seconds": 0.15470060001825914,
+    "targets_per_second": 64640.99039576906
+  }
+}

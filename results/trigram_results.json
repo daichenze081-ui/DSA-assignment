@@ -1,0 +1,86 @@
+{
+  "model": "interpolated_trigram",
+  "seed": 42,
+  "hardware": {
+    "device": "CPU",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "python": "3.12.13"
+  },
+  "vocabulary_size": 20000,
+  "alpha": 0.1,
+  "validation_search": [
+    {
+      "w2": 0.5,
+      "w3": 0.4,
+      "cross_entropy": 5.391763854279431,
+      "perplexity": 219.59036957500905,
+      "targets": 271132
+    },
+    {
+      "w2": 0.75,
+      "w3": 0.6,
+      "cross_entropy": 5.506580710068412,
+      "perplexity": 246.30748885104322,
+      "targets": 271132
+    },
+    {
+      "w2": 0.9,
+      "w3": 0.8,
+      "cross_entropy": 5.861895975167952,
+      "perplexity": 351.3897390642287,
+      "targets": 271132
+    }
+  ],
+  "best_validation": {
+    "w2": 0.5,
+    "w3": 0.4,
+    "cross_entropy": 5.391763854279431,
+    "perplexity": 219.59036957500905,
+    "targets": 271132
+  },
+  "test": {
+    "cross_entropy": 5.396362815937878,
+    "perplexity": 220.60258304665837,
+    "targets": 277278
+  },
+  "count_training_seconds": 3.020570599997882,
+  "validation_selection_seconds": 1.3789533999806736,
+  "serialized_model_bytes": 17565529,
+  "inference": {
+    "targets": 10000,
+    "repeat_seconds": [
+      0.01651369998580776,
+      0.01531390001764521,
+      0.018363500013947487
+    ],
+    "median_seconds": 0.01651369998580776,
+    "targets_per_second": 605557.8100967209,
+    "workload": "first 10000 test targets; teacher-forced scoring including log loss",
+    "warmup_runs": 1
+  },
+  "generation": {
+    "temperature": 1,
+    "max_new_tokens": 40,
+    "top_k": null,
+    "top_p": null,
+    "stop_on_eos": true,
+    "samples": [
+      {
+        "prompt": "the movie was",
+        "continuation": "put the story of blood or useless . have the very least the film much enough a viewer least <unk> always gets to the insignificant , and the beer did stars nothing more troubling than is hepburn - rated movies",
+        "seed": 42
+      },
+      {
+        "prompt": "i really enjoyed",
+        "continuation": "the writers and while these early t & <unk> ) and ego ( world was in grade school and a classic ! i've ever seen this movie . the battlestar galactica to heat , and featuring features anton yelchin .",
+        "seed": 43
+      },
+      {
+        "prompt": "the story begins with",
+        "continuation": "a fine singer and is the that <unk> , just presque rien ' ) just by the weight of the , and truths . though paragraph . with all wind that is i , though maybe not the room other",
+        "seed": 44
+      }
+    ]
+  }
+}

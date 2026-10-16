@@ -1,0 +1,81 @@
+{
+  "model": "lstm_seed44",
+  "config": {
+    "seed": 44,
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "sequence_length": 128,
+    "batch_size": 16,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "gradient_clip": 1.0,
+    "tol": 0.0001,
+    "patience": 3
+  },
+  "architecture": {
+    "embedding_dim": 100,
+    "hidden_dim": 256
+  },
+  "best_epoch": 9,
+  "epochs_completed": 12,
+  "stop_reason": "early_stopping",
+  "context_policy": "Independent chunks; all review targets scored once; recurrent state resets between chunks.",
+  "hardware": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.12.13",
+    "torch": "2.14.0+cu130"
+  },
+  "trainable_parameters": 7506592,
+  "checkpoint_bytes": 30368887,
+  "training_seconds": 454.99672850006027,
+  "validation_seconds": 44.62898020006833,
+  "validation": {
+    "cross_entropy": 5.153626784027821,
+    "perplexity": 173.0579975082331,
+    "targets": 271132
+  },
+  "test": {
+    "cross_entropy": 5.14851842059233,
+    "perplexity": 172.1762085283844,
+    "targets": 277278
+  },
+  "generation": {
+    "temperature": 1.0,
+    "top_k": null,
+    "top_p": null,
+    "max_new_tokens": 40,
+    "stop_on_eos": true,
+    "samples": [
+      {
+        "prompt": "the movie was",
+        "continuation": "so bad because i need to bring my people in disbelief but what shows any of the shorts look down . is another member of finally many , some scenes villain finds : the usual colors . the script was",
+        "seed": 44
+      },
+      {
+        "prompt": "i really enjoyed",
+        "continuation": "the canadian marketplace films , brady our script is <unk> and restless or <unk> her head with forgetting among the leap relationships when this movie is about by it the english \" god's <unk> \" , as <unk> as <unk>",
+        "seed": 45
+      },
+      {
+        "prompt": "the story begins with",
+        "continuation": "<unk> <unk> of plot - implausible witchcraft and this several classic cast members would have pushed more of trouble . of course , it's a great or exciting here as an audio , not to mention that you can love",
+        "seed": 46
+      }
+    ]
+  },
+  "inference": {
+    "workload": "First 10000 test targets; teacher-forced scoring including log loss",
+    "targets": 10000,
+    "batch_size": 16,
+    "warmup_runs": 1,
+    "repeat_seconds": [
+      0.13706530001945794,
+      0.16024699999252334,
+      0.16223009998793714
+    ],
+    "median_seconds": 0.16024699999252334,
+    "targets_per_second": 62403.6643460818
+  }
+}

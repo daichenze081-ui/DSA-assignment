@@ -1,0 +1,27 @@
+{
+  "rnn": {
+    "mean_train_seconds_per_epoch": 17.74532316666834,
+    "train_seconds_to_best": 106.3051064000174,
+    "train_and_validation_seconds_to_best": 113.75664219999453
+  },
+  "lstm": {
+    "mean_train_seconds_per_epoch": 21.540440581818324,
+    "train_seconds_to_best": 171.78538480002317,
+    "train_and_validation_seconds_to_best": 184.07973270004732
+  },
+  "transformer": {
+    "mean_train_seconds_per_epoch": 20.60848229500116,
+    "train_seconds_to_best": 389.6837065000145,
+    "train_and_validation_seconds_to_best": 414.55802069985657
+  },
+  "lstm_own_frozen": {
+    "mean_train_seconds_per_epoch": 28.200865978574647,
+    "train_seconds_to_best": 278.4871611999988,
+    "train_and_validation_seconds_to_best": 301.5584009999875
+  },
+  "lstm_glove_frozen": {
+    "mean_train_seconds_per_epoch": 37.783515492304176,
+    "train_seconds_to_best": 377.2825220999657,
+    "train_and_validation_seconds_to_best": 413.6714361999475
+  }
+}

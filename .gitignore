@@ -1,0 +1,9 @@
+# Downloaded pretrained vectors (see README section 3)
+/data/glove.6B/
+# Locally generated model checkpoints
+/results/**/*.pt
+/results/*.pt
+# Python environment and caches
+.venv/
+__pycache__/
+.ipynb_checkpoints/

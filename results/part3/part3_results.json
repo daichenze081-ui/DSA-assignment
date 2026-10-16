@@ -1,0 +1,105 @@
+{
+  "seed": 42,
+  "classifier_C_candidates": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "pooling": "Mean of all non-special token states, weighted by token count",
+  "context_policy": "Reuse Part I chunks; reset state per chunk",
+  "chunk_length": 128,
+  "results": {
+    "lstm": {
+      "feature_dimension": 256,
+      "best_C": 0.1,
+      "validation_search": [
+        {
+          "C": 0.001,
+          "validation_macro_f1": 0.7289672050318088
+        },
+        {
+          "C": 0.01,
+          "validation_macro_f1": 0.7547329041326004
+        },
+        {
+          "C": 0.1,
+          "validation_macro_f1": 0.7708567854909318
+        },
+        {
+          "C": 1.0,
+          "validation_macro_f1": 0.76988862609503
+        },
+        {
+          "C": 10.0,
+          "validation_macro_f1": 0.7698444148244212
+        }
+      ],
+      "test_accuracy": 0.691,
+      "test_macro_f1": 0.6909996909996909,
+      "confusion_matrix": [
+        [
+          345,
+          153
+        ],
+        [
+          156,
+          346
+        ]
+      ]
+    },
+    "transformer": {
+      "feature_dimension": 100,
+      "best_C": 0.01,
+      "validation_search": [
+        {
+          "C": 0.001,
+          "validation_macro_f1": 0.7318702251889915
+        },
+        {
+          "C": 0.01,
+          "validation_macro_f1": 0.7536807702782806
+        },
+        {
+          "C": 0.1,
+          "validation_macro_f1": 0.7456326936095723
+        },
+        {
+          "C": 1.0,
+          "validation_macro_f1": 0.7396626027331421
+        },
+        {
+          "C": 10.0,
+          "validation_macro_f1": 0.739699092150526
+        }
+      ],
+      "test_accuracy": 0.707,
+      "test_macro_f1": 0.70678624717419,
+      "confusion_matrix": [
+        [
+          367,
+          131
+        ],
+        [
+          162,
+          340
+        ]
+      ]
+    }
+  },
+  "ranking_comparison": [
+    {
+      "model": "lstm",
+      "language_model_perplexity": 170.45695988816635,
+      "classification_accuracy": 0.691,
+      "classification_macro_f1": 0.6909996909996909
+    },
+    {
+      "model": "transformer",
+      "language_model_perplexity": 205.1006252481561,
+      "classification_accuracy": 0.707,
+      "classification_macro_f1": 0.70678624717419
+    }
+  ]
+}

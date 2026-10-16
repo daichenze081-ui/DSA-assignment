@@ -1,0 +1,36 @@
+{
+  "measured_at_utc": "2026-10-14T16:16:26.975681+00:00",
+  "count_training_seconds": 3.020570599997882,
+  "training_cost_provenance": "Reused count fit; excludes validation grid search.",
+  "serialized_model_bytes": 17565529,
+  "size_provenance": "Count model serialized with selected weights.",
+  "weights": {
+    "w2": 0.6,
+    "w3": 0.25
+  },
+  "counts_sha256": "aa0eb1f9ed26c2a51bf1a6959db49d565628b52f8a3fe722dfe8987c43d4b40b",
+  "test_tokens_sha256": "107e528b4ccd8c0d2fde3c06513bd12bb941d1ccc17f8549aa66aaaf7630d69e",
+  "verified_test": {
+    "cross_entropy": 5.375383519881204,
+    "perplexity": 216.02270542784825,
+    "targets": 277278
+  },
+  "hardware": {
+    "device": "CPU",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26100-SP0"
+  },
+  "inference": {
+    "workload": "First 10000 test targets; teacher-forced scoring including log loss",
+    "targets": 10000,
+    "warmup_runs": 1,
+    "repeat_seconds": [
+      0.023160000011557713,
+      0.017336499993689358,
+      0.017466899997089058
+    ],
+    "median_seconds": 0.017466899997089058,
+    "targets_per_second": 572511.4360113442
+  }
+}

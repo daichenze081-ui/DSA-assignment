@@ -1,0 +1,82 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "scope": "LM optimization seeds; pretrained tables and missing rows fixed at seed 42",
+  "variants": {
+    "random_trainable": {
+      "runs": [
+        {
+          "seed": 42,
+          "test_perplexity": 170.45695988816635,
+          "validation_perplexity": 171.30886668246626,
+          "best_epoch": 8
+        },
+        {
+          "seed": 43,
+          "test_perplexity": 173.03188542911224,
+          "validation_perplexity": 173.11105358486552,
+          "best_epoch": 9
+        },
+        {
+          "seed": 44,
+          "test_perplexity": 172.1762085283844,
+          "validation_perplexity": 173.0579975082331,
+          "best_epoch": 9
+        }
+      ],
+      "test_ppl_mean": 171.88835128188762,
+      "test_ppl_std": 1.3113758923834058
+    },
+    "own_frozen": {
+      "runs": [
+        {
+          "seed": 42,
+          "test_perplexity": 170.02224764691212,
+          "validation_perplexity": 172.41930163566244,
+          "best_epoch": 11
+        },
+        {
+          "seed": 43,
+          "test_perplexity": 170.93342301010674,
+          "validation_perplexity": 172.996692086646,
+          "best_epoch": 13
+        },
+        {
+          "seed": 44,
+          "test_perplexity": 171.8530567351079,
+          "validation_perplexity": 173.9299028682149,
+          "best_epoch": 12
+        }
+      ],
+      "test_ppl_mean": 170.93624246404227,
+      "test_ppl_std": 0.9154078005705697
+    },
+    "glove_frozen": {
+      "runs": [
+        {
+          "seed": 42,
+          "test_perplexity": 175.42062284223795,
+          "validation_perplexity": 177.49419830303106,
+          "best_epoch": 10
+        },
+        {
+          "seed": 43,
+          "test_perplexity": 174.93639237037638,
+          "validation_perplexity": 176.15856755887702,
+          "best_epoch": 11
+        },
+        {
+          "seed": 44,
+          "test_perplexity": 171.04866879007122,
+          "validation_perplexity": 172.72629235003242,
+          "best_epoch": 10
+        }
+      ],
+      "test_ppl_mean": 173.80189466756187,
+      "test_ppl_std": 2.3966245715240544
+    }
+  }
+}

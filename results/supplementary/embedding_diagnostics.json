@@ -1,0 +1,53 @@
+{
+  "norms": {
+    "random_initial": {
+      "mean_ordinary_l2_norm": 9.975198745727539,
+      "std_ordinary_l2_norm": 0.7071257829666138,
+      "special_l2_norms": [
+        0.0,
+        9.58340072631836,
+        9.897001266479492,
+        9.416951179504395
+      ]
+    },
+    "lstm": {
+      "mean_ordinary_l2_norm": 10.04996109008789,
+      "std_ordinary_l2_norm": 0.7497572302818298,
+      "special_l2_norms": [
+        0.0,
+        10.036118507385254,
+        11.586230278015137,
+        9.416951179504395
+      ]
+    },
+    "lstm_own_frozen": {
+      "mean_ordinary_l2_norm": 1.4805197715759277,
+      "std_ordinary_l2_norm": 0.4991709589958191,
+      "special_l2_norms": [
+        0.0,
+        9.58340072631836,
+        9.897001266479492,
+        9.416951179504395
+      ]
+    },
+    "lstm_glove_frozen": {
+      "mean_ordinary_l2_norm": 5.204147815704346,
+      "std_ordinary_l2_norm": 1.287661075592041,
+      "special_l2_norms": [
+        0.0,
+        9.58340072631836,
+        9.897001266479492,
+        9.416951179504395
+      ]
+    }
+  },
+  "glove_covered_lm_words": 19042,
+  "ordinary_lm_words": 19996,
+  "glove_covered_lm_token_occurrences": 1306910,
+  "ordinary_lm_token_occurrences": 1328463,
+  "glove_lm_token_coverage": 0.9837759877392144,
+  "skipgram_lm_token_coverage": 1.0,
+  "glove_parse_seconds_measured_now": 0.8130365000106394,
+  "download_seconds": null,
+  "download_note": "Historical download time was not recorded; no retrospective estimate. Norms are diagnostics, not a normalized-table ablation."
+}

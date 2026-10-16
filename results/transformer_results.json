@@ -1,0 +1,85 @@
+{
+  "model": "transformer",
+  "config": {
+    "seed": 42,
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "sequence_length": 128,
+    "batch_size": 16,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "gradient_clip": 1.0,
+    "tol": 0.0001,
+    "patience": 3
+  },
+  "architecture": {
+    "embedding_dim": 100,
+    "num_heads": 4,
+    "num_layers": 2,
+    "feedforward_dim": 400,
+    "max_length": 128,
+    "dropout": 0.1
+  },
+  "best_epoch": 19,
+  "epochs_completed": 20,
+  "stop_reason": "max_epochs",
+  "context_policy": "Independent chunks; all review targets scored once; recurrent state resets between chunks.",
+  "hardware": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.12.13",
+    "torch": "2.14.0+cu130"
+  },
+  "trainable_parameters": 4275600,
+  "checkpoint_bytes": 17454157,
+  "training_seconds": 412.16964590002317,
+  "validation_seconds": 26.510688999842387,
+  "validation": {
+    "cross_entropy": 5.3252910986968525,
+    "perplexity": 205.46816327467474,
+    "targets": 271132
+  },
+  "test": {
+    "cross_entropy": 5.3235007135776184,
+    "perplexity": 205.1006252481561,
+    "targets": 277278
+  },
+  "generation": {
+    "temperature": 1.0,
+    "top_k": null,
+    "top_p": null,
+    "max_new_tokens": 40,
+    "stop_on_eos": true,
+    "samples": [
+      {
+        "prompt": "the movie was",
+        "continuation": "amazing , of both <unk> version of great from a few years ago that since i saw the day and i was perfect . even half of laughter . i first saw this movie outside of the killer and boston",
+        "seed": 42
+      },
+      {
+        "prompt": "i really enjoyed",
+        "continuation": "this movie to make this film in just a big letdown my teen crap box . video can do , and hope for blood \" is film because it should improve never write an experiment with 7 minutes in the",
+        "seed": 43
+      },
+      {
+        "prompt": "the story begins with",
+        "continuation": "a similar <unk> film and hundreds of my people effects . the action shows any length of amin look down . is another member of nuclear snowy mountains , i was pretty good french and late .",
+        "seed": 44
+      }
+    ]
+  },
+  "inference": {
+    "workload": "First 10000 test targets; teacher-forced scoring including log loss",
+    "targets": 10000,
+    "batch_size": 16,
+    "warmup_runs": 1,
+    "repeat_seconds": [
+      0.052560900017851964,
+      0.03702719998545945,
+      0.048395799996796995
+    ],
+    "median_seconds": 0.048395799996796995,
+    "targets_per_second": 206629.50092077898
+  }
+}

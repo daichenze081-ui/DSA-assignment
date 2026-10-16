@@ -1,0 +1,284 @@
+{
+  "groups": {
+    "lstm": {
+      "length<=128": {
+        "n": 158,
+        "errors": 52,
+        "accuracy": 0.6708860759493671
+      },
+      "length129-256": {
+        "n": 480,
+        "errors": 143,
+        "accuracy": 0.7020833333333333
+      },
+      "length>256": {
+        "n": 362,
+        "errors": 114,
+        "accuracy": 0.6850828729281768
+      },
+      "UNK<=2%": {
+        "n": 375,
+        "errors": 120,
+        "accuracy": 0.68
+      },
+      "UNK>2%": {
+        "n": 625,
+        "errors": 189,
+        "accuracy": 0.6976
+      },
+      "negation_present": {
+        "n": 871,
+        "errors": 273,
+        "accuracy": 0.6865671641791045
+      },
+      "negation_absent": {
+        "n": 129,
+        "errors": 36,
+        "accuracy": 0.7209302325581395
+      }
+    },
+    "transformer": {
+      "length<=128": {
+        "n": 158,
+        "errors": 47,
+        "accuracy": 0.7025316455696202
+      },
+      "length129-256": {
+        "n": 480,
+        "errors": 137,
+        "accuracy": 0.7145833333333333
+      },
+      "length>256": {
+        "n": 362,
+        "errors": 109,
+        "accuracy": 0.6988950276243094
+      },
+      "UNK<=2%": {
+        "n": 375,
+        "errors": 109,
+        "accuracy": 0.7093333333333334
+      },
+      "UNK>2%": {
+        "n": 625,
+        "errors": 184,
+        "accuracy": 0.7056
+      },
+      "negation_present": {
+        "n": 871,
+        "errors": 253,
+        "accuracy": 0.7095292766934558
+      },
+      "negation_absent": {
+        "n": 129,
+        "errors": 40,
+        "accuracy": 0.689922480620155
+      }
+    },
+    "tfidf": {
+      "length<=128": {
+        "n": 158,
+        "errors": 16,
+        "accuracy": 0.8987341772151899
+      },
+      "length129-256": {
+        "n": 480,
+        "errors": 59,
+        "accuracy": 0.8770833333333333
+      },
+      "length>256": {
+        "n": 362,
+        "errors": 62,
+        "accuracy": 0.8287292817679558
+      },
+      "UNK<=2%": {
+        "n": 375,
+        "errors": 39,
+        "accuracy": 0.896
+      },
+      "UNK>2%": {
+        "n": 625,
+        "errors": 98,
+        "accuracy": 0.8432
+      },
+      "negation_present": {
+        "n": 871,
+        "errors": 119,
+        "accuracy": 0.8633754305396096
+      },
+      "negation_absent": {
+        "n": 129,
+        "errors": 18,
+        "accuracy": 0.8604651162790697
+      }
+    },
+    "lstm_pca100": {
+      "length<=128": {
+        "n": 158,
+        "errors": 48,
+        "accuracy": 0.6962025316455697
+      },
+      "length129-256": {
+        "n": 480,
+        "errors": 158,
+        "accuracy": 0.6708333333333333
+      },
+      "length>256": {
+        "n": 362,
+        "errors": 124,
+        "accuracy": 0.6574585635359116
+      },
+      "UNK<=2%": {
+        "n": 375,
+        "errors": 123,
+        "accuracy": 0.672
+      },
+      "UNK>2%": {
+        "n": 625,
+        "errors": 207,
+        "accuracy": 0.6688
+      },
+      "negation_present": {
+        "n": 871,
+        "errors": 287,
+        "accuracy": 0.6704936854190585
+      },
+      "negation_absent": {
+        "n": 129,
+        "errors": 43,
+        "accuracy": 0.6666666666666666
+      }
+    }
+  },
+  "random_sample_seed": 4213,
+  "random_errors": {
+    "lstm": [
+      {
+        "test_index": 965,
+        "true_label": 1,
+        "predicted_label": 0,
+        "text": "Begotten.The magic.The Terror.The slight boredom.<br /><br />That \"Begotten\" is for acquired tastes goes without saying,you don't just happen to watch it unless your friends are real art-house movie buffs.You must dig the weird,the macabre,the bizarre.You must dig cool flicks.And you must dig to find diamonds.<br /><br />\"Begotten\" is one of the most visually dazzling and mystifying films ever known to man.The visual part is something to behold,something no one can prepare you for.But since the film is devoid of any type of dialogue,the visual part is pretty much the only part....\"Begotten\" is a visual film.The soundscapes created for the film are magical and groundbreaking but still....the sight of it....<br /><br />God commits suicide in a particularly gory scene then from his corpse rises Mother Earth who impregnates herself with God's semen and gives birth to Flesh on Bone,a retarded child.She then abandons him,and he gets tortured by heathen-like creatures.Mother comes back (to save him?) but she and her son get murdered by the horrible creatures.<br /><br />The film is about the meaninglessness of life,and about the fact that we come to this planet to suffer and to die,and that when something dies something else is born etc.Nihilism.<br /><br />The film's no.1 quality is of course the visuals,the setting,those haunting images,this other-worldly quality....After you're done watching,you feel like an alien.It's THAT mesmerizing.<br /><br />When people say it should last 30' instead of 70' they're right.No they're not,it could last 40'.It's just that everything happens to such a slow pace.In fact,the plot summary I provided is all that happens in the film,like no kidding.Still,it's....I don't know....Glorious... <br /><br />...Like a flame burning away the darkness..."
+      },
+      {
+        "test_index": 922,
+        "true_label": 0,
+        "predicted_label": 1,
+        "text": "I saw this on a screener DVD a couple months before it was released.<br /><br />I liked the main characters and the overall story but some scenes are pretty sloppy and confusing. The sets were fitting but a few just looked like left overs from Freaks & Geeks or reminded me of a cell phone commercial shot in a middle class home. Definitely not what the DVD cover claims, \"Destined to be the next stoner classic\", hardly.<br /><br />Wardrobe and hairstyles are done well and yes, there are some really pretty girls in this, always nice to see a good looking cast.<br /><br />Almost every scene contained guitar that just droned on and on. Sound design was a bit poor. I think less would have been best."
+      },
+      {
+        "test_index": 664,
+        "true_label": 1,
+        "predicted_label": 0,
+        "text": "American war movie fans might be bored out of their skulls by this movie, but that boredom is born of ignorance. Guerrilla suppression operations are always like that. Sit around and wait, get some hookers, get drunk at the base, wheel and deal with the businessman, kick a prisoner around, cover up the killing of the street merchant by the green private. Then, boom, there goes two fuel trucks, and for 10 minutes a small-arms battle with one high-caliber machine gun. Then wait for brass to plan a way to knock out their stronghold, and then end up killing a few civilians in the process of doing it. If reality doesn't work for Western viewers, there's always Top Gun or Rambo (Top Gun realistic? nope)<br /><br />The best part of Afganskiy Izlom's realism was the way all the planes dropped flares like confetti. They had to do that because Carter and Reagan gave the Mujahedin so many missiles. Also, the wave of Mi-24's was excellent, a better helo attack even than Apocalypse now. The sight of their missiles dropping and shooting was a scene of impending \"death from above\" for whoever they were aimed at.<br /><br />It's funny how the Soviets were able to make an honest Afghanistan movie within a year after their departure, but it took the US six years. Afganskiy Izlom is just as real if you apply it to NATO's occupation too. Someone will always pick up the gun and shoot you cause they care more about the land. It's a movie Westerners should watch. Unfortunately I don't think anyone has ever made English subtitles; I might have to make some."
+      },
+      {
+        "test_index": 553,
+        "true_label": 1,
+        "predicted_label": 0,
+        "text": "Absolutely fantastic! Whatever I say wouldn't do this underrated movie the justice it deserves. Watch it now! FANTASTIC!"
+      },
+      {
+        "test_index": 410,
+        "true_label": 0,
+        "predicted_label": 1,
+        "text": "This movie was ridiculous from the start. Let me save you all time from watching this movie. A woman who sells corn liquor to the locals takes in her cousin or nephew and he convinces her to open a café downstairs from her home. She does and she and the cousin become close. There is a scene later where she is locking lips with him. Later, the woman finds out an old boyfriend is coming back from jail and its tense between them, leading to a down and out fist fight in the café. The woman's cousin/nephew is enamored by the man. The ending was awful, the story was awful, and if I could get back the time wasted on this movie, I would appreciate it. A definite skip."
+      }
+    ],
+    "transformer": [
+      {
+        "test_index": 987,
+        "true_label": 0,
+        "predicted_label": 1,
+        "text": "I really liked this quirky movie. The characters are not the bland beautiful people that show up in so many movies and on TV. It has a realistic edge, with a captivating story line. The main title sequence alone makes this movie fun to watch."
+      },
+      {
+        "test_index": 254,
+        "true_label": 0,
+        "predicted_label": 1,
+        "text": "A lot of actors have a multitude of good movie roles in their soul. Some, a handful. Others, maybe a couple.<br /><br />Then there's Linda Blair. \"The Exorcist\". That's it.<br /><br />When you see \"Chained Heat\" and watch Linda Blair in it, you have to wonder what, if anything, was running through her mind.<br /><br />Certainly not, \"Oh boy: Oscar for Best Actress, here I come!\"<br /><br />Just another women in prison film like they used to make for the cheap in the '70s, this one actually has names you may recognize. John Vernon plays the dean... I mean, the warden (with a hot tub in his office; wonder what he told the contractor?), Stella Stevens pops up, even Henry Silva and Louisa Moritz show how bad they needed the work.<br /><br />And special mention, of course, for our heroine Sybil Danning as a bisexual prisoner who puts the moves on poor Blair. To paraphrase, Sybil is as Sybil does and everything Sybil does is done perfect. Makes you forget what a terrible movie you're watching.<br /><br />Almost.<br /><br />Two stars. One for Sybil and another for trying to pass off Linda Blair as a sex symbol. Whatever could have possessed them (get it?)?"
+      },
+      {
+        "test_index": 467,
+        "true_label": 1,
+        "predicted_label": 0,
+        "text": "\"Medusa: Dare to be Truthful\" is an outrageously funny parody that is a fine companion to the original, \"Madonna: Truth or Dare\". Julie Brown's brilliant creation skewers Madonna's highly entertaining documentary (although it wasn't exactly daring, insightful, candid, or truthful) with a faithfulness to detail, right down to the packaging. I highly recommend this for Madonna fans, Julie Brown fans, or anyone who enjoys sharp and clever parody."
+      },
+      {
+        "test_index": 162,
+        "true_label": 0,
+        "predicted_label": 1,
+        "text": "I generally loved the Carry on movies but this one is actually pretty awful. There are very few laughs because the whole thing is so forced.There is plenty of talent on the screen and some come off better than others. June Whitfield, Kenneth Williams, Hatti Jaques and Peter Butterworth are fine but Barbara Windsor looks tired and Sid James is just tacky. Joan Sims comes off well but in the case of the usually wonderful Charles Hawtrey its just plain sad. When you think of the sad end to his career the movie is almost too depressing to watch. The homophobia of the movie is nasty and its a very unpleasant experience. The set looks cheap and unlike other movies in the series the movie is very clearly set in England. The sea side looks cold and there is little attempt to create any illusions here. It looks like a cheap production. You will be surprised at how miserable you become watching this especially if you loved the series."
+      },
+      {
+        "test_index": 593,
+        "true_label": 1,
+        "predicted_label": 0,
+        "text": "i was glad that this movie did without all the supposed depth of all too many pseudo-serious interracial movies. race was one issue, yes, but so was class...and loyalty...and honesty, etc.<br /><br />i also loved the idea that the love affair wasn't couched solely in the 'decorative' aspects of either character's appearance. aren't our divorce courts (on both sides of the Atlantic, i daresay!) filled now with enough couples who thought 'looking good. together.' is all it takes to make a solid marriage? in any case, the tenderness and sensuality of both characters was thick enough to cut in love scenes that would have brought a rainbow to any dreary day! in other words, a light-hearted movie that's by no means a light-weight!"
+      }
+    ],
+    "tfidf": [
+      {
+        "test_index": 551,
+        "true_label": 0,
+        "predicted_label": 1,
+        "text": "Yes, this bizarre feature was written by John Sayles. Shot in Toronto, it's yet another '80s era feature about the dangers of the urban jungle, where the police fear to go and the homeless and the criminal classes are the only inhabitants. Into this mix comes the myth of Wild Thing, a feral young man raised by a bag lady after his parents were murdered by a dirty cop on the take (Maury Chaykin) and Chopper, the local crime lord (Robert Davi). Stir in the local do-gooders (priest Sean Hewitt and clueless social worker Kathleen Quinlan), and you have a recipe for some rather unexciting action sequences. Davi is the standout amongst the cast, and cinematographer Rene Verzier does a pretty good job. Otherwise this is a rather lumpen action pic that won't satisfy action fans and will leaves Sayles' admirers slack-jawed."
+      },
+      {
+        "test_index": 282,
+        "true_label": 0,
+        "predicted_label": 1,
+        "text": "A cheesy \"B\" crime thriller of the early '50, the story is droll, the characters wooden, Allison Hayes and Abbe Lane are the only two sexpots that make it an eye-catcher, but one short shot, only a few frames long, shows an \"el\" train crossing the river on the State Street bridge, of the 6000 series Pullman-built cars painted in their original 1950 paint scheme, as they were delivered when new in 1950. For traction fans like me, that one short take makes the picture worthwhile. I think films like this one, Ulmer's DETOUR, D.O.A. with Edmund O'Brien,THE FUGITIVE with Harrison Ford, and others of the film noir genre, (big city crime dramas) make it interesting if for nothing other than the fact that I know Chicago and San Francisco intimately and recognize most of the street locations. Other wise it's a really droll boring film!"
+      },
+      {
+        "test_index": 902,
+        "true_label": 1,
+        "predicted_label": 0,
+        "text": "Genius or utter madness? That depends on your interpretation of this film. I responded to it on the level of a self-aware \"cop-movie parody\", and I sincerely hope that was the intention as I don't see anyone taking it seriously! :-D Paul Rudd for one seems to be chewing up the scenery and really getting into the spirit of things! Is this film supposed to mark a departure for Rudd from his core background in the comedy genre? Some kind of insane attempt to reinvent him as a hard-boiled action star? I think not! <br /><br />With the cheesy, almost awkward acting, low budget FX, and zany over-the-top action set pieces, it all kinda evoked that old TV show \"Sledge Hammer\" for me! HILARIOUS!!! :-)<br /><br />Of course, I may have totally interpreted the film wrong. If it was in fact an attempt at a 'straight' action movie, then it was certainly an amusing failure!!<br /><br />Watch with lots of alcohol and some mates!!! ;-)"
+      },
+      {
+        "test_index": 153,
+        "true_label": 0,
+        "predicted_label": 1,
+        "text": "In this film, there is a loose plot of a man (Bardem) who wishes to obtain financing for his construction business, and marries a woman he does not love (the wide-eyed Maria de Medieros) in the process. He maintains his passionate relationship with his first and true love, and ultimately gets entangled in his own romantic web. He never gives up his juggling act, until the three main characters come face to face. The film results boring, with lots of free sex (well, both girls are really good), all the reactions in the film are absurd, incoherent and of course, too much stupid. None of the characters are believable, which makes the movie a little annoying. Anyway, the acting is surprisingly good for such a bad directed film, which makes it a little interesting, but, if you can, watch another film please!"
+      },
+      {
+        "test_index": 870,
+        "true_label": 0,
+        "predicted_label": 1,
+        "text": "Two movies: \"the fifth element\", \"armageddon\". The same subject: to save the world. The same main actor: Bruce Willis. One difference: \"Armageddon\" is very inferior to Luc Besson's film. Some spectacular special effects don't succeed in hiding a labored and globally conventional screenplay. Several parts of the movie are showing it. I think about the president's speech and especially Willis' relationship with his daughter, \"Grace\". At the beginning of the movie, he tends to neglect and overprotect her and this makes her weary. Then, at the end of the movie, it's true love and understanding that shine in him. On another hand, the movie falls in the following trap: Michael Bay takes his subject too seriously. Of course, the movie tries to be funny but the result doesn't work as the humor introduced in the movie is often crude and pretty low-level whereas in the \"fifth element\", the humor was zany, involuntary and enabled to overlook the serious side of the action. The movie suffers from two other handicaps: it often falls into the ridiculous (the Russian astronaut) and almost all the actors are bad used. Bruce Willis is all the contrary of his \"fifth element\"'s character. He plays the he-man, he hams it up and sometimes, he's unbearable. The other actors are barely credible in their own roles, particularly, Willis' sinking crew. It seems that this crew is here just for having fun. One of them is taken for being very qualified but he looks like a fool. And poor Liv Tyler! She's at the NASA just to be decorative.<br /><br />When the movie was released in France in August 1998, Bruce Willis expressed is weariness of saving the world. His weariness was probably justified by this spectacular but poor movie."
+      }
+    ],
+    "lstm_pca100": [
+      {
+        "test_index": 397,
+        "true_label": 1,
+        "predicted_label": 0,
+        "text": "Its a very sensitive portrayal of life with unquenched or constrained desires. What does one do with desire in a culture and society with rigid norms? One husband finds outlet with the immigrant - since immigrants don't belong or aren't accepted, they don't need to conform and dam their desires. The other husband looks for solace in spirituality and tries to evaporate his desire into nothingness. It fails - of course - and he breaks down in the last scene for multiple reasons. Sita still cared enough for him to find that moment to let him know that he is not responsible for her deviant outlet to her blocked desires. The mother in her still couldn't find the strength to destroy his myth. She sees him as a child who is glorifying himself in his lust-control but should she give him the opportunity to finally grow up? Both the wives find courage and togetherness through their shared rejection by their husband. <br /><br />But the final act of rejection was by the grandmother - she could not break free from her rusted mindset to accept Sita's desire. A decade and more of receiving care was not enough to break the shackles of her culture.<br /><br />Seems like it was easiest for the househelp to let his desires flow - since he's anyway damned by his culture - being at the bottom of the hierarchy. Since there is anyway no respect and expectations, might as well taste sin."
+      },
+      {
+        "test_index": 54,
+        "true_label": 1,
+        "predicted_label": 0,
+        "text": "What a great film! I never knew much about Buddy Holly, but was familiar with his lively and fun music. This is a wonderful biography of someone who helped change the music in the 1950's. Although I never cared for Gary Bussey, he was fabulous as Buddy Holly! I don't know how accurate the movie is, but assume at least for the most part it is accurate, which makes the movie all the more interesting. The music throughout the movie just adds the pizazz to this biography. I don't think I would change a thing in this film, it was all good! What a difference in the stars from the 50's to todays music stars. How can you compare someone like Buddy Holly to Justin Timberlake? or any of the other popular singers of this generation?"
+      },
+      {
+        "test_index": 326,
+        "true_label": 1,
+        "predicted_label": 0,
+        "text": "There were heist movies before this one, and indeed the likes of Rififi were an obvious influence on it - but The Red Circle is more than just another entry in an overpopulated genre and with this film, director Jean-Pierre Melville has managed to create something that both thrills on the surface and gives its audience something to think about. Being cool is just as important a feature of the modern crime movie as guns and gangsters, and Melville delivers that with this film in droves; the tone of the film is very relaxed too and Melville allows the bulk of the film to bubble under the cool exterior. The story has a number of angles but the central character is Corey - a thief who is released from prison. His release coincides with the escape of infamous murderer Vogel, who slips from under the nose of Police Commissioner Mattei during a train ride. The first thing Corey does upon release is steal some money from his former boss Rico, and the second thing he does is recruit Vogel and a sharpshooter to help him pull of a jewel heist. But Rico and the police are hot on the thieves' tails...<br /><br />The film is bolted together by four excellent central performances. Alain Delon is calm and calculating as the film's anti-hero, while Gian Maria Volontè looks formidable in his role as the escaped murderer. François Périer is good also as a dubious club owner, while the real standout performance comes from André Bourvil in his role as the police commissioner. The film runs at almost two and a half hours and is not exactly a thrill ride. However, the director keeps things interesting by keeping the action focused on the important elements. The film does feature crime film stapes such as shootings, but they are kept to a minimum. The first two thirds of the movie are really just building up to the suspenseful heist scene towards the end. Rififi was most famous for its heist sequence - an intricately designed scene in which nobody speaks a word. The heist in this film is similar in that it is also wordless, and I have to say that I preferred the scene in Rififi; but Melville's skill in direction and the calm and composed way that it plays out make good of it. The film boils down to an exciting climax that rounds it all off nicely. Overall, this might not appeal to all crime film fans as the action is more than a little bit slow; but The Red Circle is an excellent film and deserves its reputation as a masterpiece."
+      },
+      {
+        "test_index": 525,
+        "true_label": 0,
+        "predicted_label": 1,
+        "text": "\"Undercurrent\" features a top-notch cast of wonderful actors who might've been assembled for the perfect drawing-room comedy. Alas, they are pretty much wasted on a 'woman's view' potboiler--and a paper-thin one at that. Katharine Hepburn is indeed radiant as a tomboy/old maid who finally marries, but her husband is deeply disturbed and harboring dark family secrets. Director Vincente Minnelli has absolutely no idea how to mount this outlandish plot, concocted by Edward Chodorov from a story by Thelma Strabel, and the friendly, first-rate cast (including Robert Taylor, Robert Mitchum and Edmund Gwenn) is left treading in murky waters. ** from ****"
+      },
+      {
+        "test_index": 53,
+        "true_label": 0,
+        "predicted_label": 1,
+        "text": "Yes it is your typical direct to video action flick. And of course they do their best to change it up a little bit but fail miraculously. Snipes delivers his perfectly bland performance that he always does. Colloca proves that you don't need any talent to star in a film but just sex appeal. The worst part is that it didn't cover my bad movie basics which are: 1  Cheap looking villains. 2  Perfectly timed one-liners. 3  Intense car chases with massive explosions. 4  The hero hooking up with the hot chick. 5  Multitudes of nude or scantily clad women for no reason. OK so I lied, it covers those but does so horribly."
+      }
+    ]
+  },
+  "caveat": "Negation is a lexical proxy, not manually annotated mixed sentiment."
+}

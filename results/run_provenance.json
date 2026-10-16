@@ -1,0 +1,95 @@
+{
+  "started_utc": "2026-10-14T16:16:03.459418+00:00",
+  "completed_utc": "2026-10-14T17:43:36.814949+00:00",
+  "notebook_sha256": "cc5e9334fd42e6594284c20b8294854080f70cb88d930b3164bd36ab0a426d27",
+  "data_sha256": {
+    "data/test.jsonl": "8ac4f421ef13136e2f47993e8a72ffd29d919177cc2d0ef5efd8a4c4e8f7a600",
+    "data/test_tokens.jsonl": "107e528b4ccd8c0d2fde3c06513bd12bb941d1ccc17f8549aa66aaaf7630d69e",
+    "data/train.jsonl": "ead5cb3e4e417eaa16ac2c282c0c41c8f8f66ef493674373d8486fa5bb23dab2",
+    "data/train_tokens.jsonl": "ebdd6357c5439bf4c9784f5f3294c9cebbb82bafb85d38abc1eed224925466c2",
+    "data/validation.jsonl": "dba307ca93c16e25ed3b1179ee86abefcd4d67ac6e978f27f25d930ecb333f43",
+    "data/validation_tokens.jsonl": "7aecf92851647dc8df35e6e622fde57572b1bba62136627d6e6a1f30c416b1e4",
+    "data/vocab.json": "a39460831f57ae24a34b9093a3e650891e6edbd89bd22c50c824f6e16467881c",
+    "data/split_config.json": "f4faf2be963c4644c8c5daab83699a538e07cd7794d4d70aa624705450bccd95"
+  },
+  "result_sha256": {
+    "results/lstm_glove_frozen_history.json": "2fe0632ff69a90e5f6fee99c0092a19074a92a34f87c21e4585b2dc094ab1493",
+    "results/lstm_glove_frozen_results.json": "55041cacfcf70135b1dc858dbaa9dfc0e18397e04cbfa268ca45a85cb93c7d7c",
+    "results/lstm_history.json": "363fdffc5f213eb69f750e0c007ed08e67df79eb6ba1311e3add99dd4a640599",
+    "results/lstm_own_frozen_history.json": "3c0b59a43831c359c2e662ec9b80948e9c82def338f556a83db6c72a18f68ae9",
+    "results/lstm_own_frozen_results.json": "badb269013203819a3275c261461cc296b5fe44d5d48741fcd6653421d6d5053",
+    "results/lstm_results.json": "427f3f95d95c0dd62b8452501f254e685a8785cce599fa2e39a424fa22651acf",
+    "results/part2_summary.json": "f7459b5175b1990f9f7961db2afaa1369517f54b164332f2b45e35b2f8311ecf",
+    "results/part3/error_examples.json": "9b9bda5e0efc3ea99ca2dd519eac465ffcf9da30c21d670b121b147ef60be323",
+    "results/part3/part3_results.json": "34f84ca297612c5be0058201ff26fcf75970c1b9ce960f4288e2370135fae9ef",
+    "results/rnn_history.json": "d1980aa7f2ec58ea8acd71d7a22bb9efd04a3814795bbeb510bf0917cb2aca15",
+    "results/rnn_results.json": "27489520a629d3988602267a04310c3260d518f6a5d3786daf633859d606bc51",
+    "results/supplementary/classification.json": "1e53e56589a74f80677a080742601d971b588a47831fc5df81ae759837197c54",
+    "results/supplementary/embedding_diagnostics.json": "e830e0efb27a46f949812ae21e656a980d801dbcd988b7e940bdfd28f51725f6",
+    "results/supplementary/environment.json": "94221896f599f198addff0e57f9d0ece7ef36a4413f9b59069505c7b06dc9c1f",
+    "results/supplementary/error_analysis.json": "832dabe01f9aa001a7ec055e68dee087f4413b719edf8d2d057b018d5e6851f7",
+    "results/supplementary/generation.json": "f94ca3a2fc56477e225b8b12d5b9d640bc864409e88b55cad8e5f8e787ab200a",
+    "results/supplementary/multiseed.json": "b4cad45478992dfda5cb80f4444ed83f394fe6699bfdd512be7f1023c22e89db",
+    "results/supplementary/tfidf_vocabulary.json": "beafd8362ea6bcf4485072918507775b60c48d5e97436010d31ad9c22497ec1a",
+    "results/supplementary/timing.json": "edb6bfb74ecab98abad2066e54ca069dc2d80e4e94598623b48886f818a6faef",
+    "results/supplementary/training/lstm_glove_frozen_seed43_history.json": "3cf0339a108d02d027d6580b087862a1c809b695a9bc5d7e15186054be232619",
+    "results/supplementary/training/lstm_glove_frozen_seed43_results.json": "d3dae96a0f5419c15e6de2a4962492fdd6d8f813e247e9dd2eb5bfe03c389657",
+    "results/supplementary/training/lstm_glove_frozen_seed44_history.json": "61a0f2045b2fcd1a348a24ec830005c969040e1891504359b2fa54079ddfaf62",
+    "results/supplementary/training/lstm_glove_frozen_seed44_results.json": "19aae8ac83f5cabe3b13da87ac5cdbd64144e1822631a473d92166e13801e9b7",
+    "results/supplementary/training/lstm_own_frozen_seed43_history.json": "b66a805631789d82caa8d347c13fcf872d7b01ddb3f9f9b3a2dedddff57ff03a",
+    "results/supplementary/training/lstm_own_frozen_seed43_results.json": "4224252b9f6fd539c709860b0f3287cacfc2e90ea78ee26a8013b6b7fa86d604",
+    "results/supplementary/training/lstm_own_frozen_seed44_history.json": "edb60dfb65e88fba514b86210e6d7d6bd6629b9ab73fefa0be8173b47eba18e0",
+    "results/supplementary/training/lstm_own_frozen_seed44_results.json": "7daefcd28a576a2e79bd50ad05f6fcbe41b35907e7cf3e2192940eb125094816",
+    "results/supplementary/training/lstm_random_frozen_history.json": "9e5c75f4007e5081e8cf086997cd5696410bcb93a179bb0b8743eb129659ce05",
+    "results/supplementary/training/lstm_random_frozen_results.json": "a9f07f060294869e24813089e3e54f2e3ef806b99fd3ce8f6c9231da2802d163",
+    "results/supplementary/training/lstm_seed43_history.json": "0bb7bcf311c368f014fe93758f0b21c0f8f854001df392bb87231441d7138f0a",
+    "results/supplementary/training/lstm_seed43_results.json": "00a56237c4c9b91862c8b2df18456f701551d2bcf2f290d017426e67cd026e32",
+    "results/supplementary/training/lstm_seed44_history.json": "9b25d5d93a2273a42ea80aaa65f6c5a99cb65831f74ad09eca440fb0e80bcb18",
+    "results/supplementary/training/lstm_seed44_results.json": "f889df99a002c90728d419b20a97650fd74ce6cc51c4ab842f0abfb37493d4d4",
+    "results/supplementary/training/transformer_budget40_history.json": "3f15fb29711c8ab5981f20109b266a82408b1395d16c72da3c8ff134066b5613",
+    "results/supplementary/training/transformer_budget40_results.json": "6f9ac6a9725fd1aa9639277b6292628a859c742d3a0f7b465ae489c710c04970",
+    "results/supplementary/trigram_grid.json": "9d79902b085dac379db933b5ee991070fa988d9d00024775caadda075d7cef25",
+    "results/supplementary/trigram_grid_cost.json": "53496129bec727e79cc1dc025edd2a96d9b6c4a3537dffdbd94a30c4e536365f",
+    "results/transformer_history.json": "24d21631076158b0fe0b1947f06f1bf3fc78c7c809175e8d5da37e9567400fdc",
+    "results/transformer_results.json": "386bf81a66eb6c75b441d401d4d094e6416dfaaf2911f33b0d031380c22acb42",
+    "results/trigram_results.json": "5d0eb5154f07f003be28472c2e7841ab96e6a6277714a283e0336431cd6c66c0",
+    "results/supplementary/test_predictions.npz": "44c407794d9aa7d3e337805b30bbfd47a416d584050836d700cc4ea6e48c648b"
+  },
+  "execution_policy": "All experiments execute; no skip based on existing result JSON.",
+  "scope": "Main and originally exploratory experiments, now in one notebook execution order.",
+  "partial_updates": [
+    {
+      "completed_utc": "2026-10-15T17:06:23.008162+00:00",
+      "scope": "Expanded shared classifier C grid; reused saved train/validation/test features and splits. No LM retraining or timing rerun. Original full-run fields above remain historical.",
+      "classifier_C_candidates": [
+        0.001,
+        0.01,
+        0.1,
+        1,
+        10
+      ],
+      "executed_analysis_cell_indices_0based": [
+        91,
+        93,
+        95,
+        97,
+        99,
+        103
+      ],
+      "updated_file_sha256": {
+        "Assignment.ipynb": "4588df22be9ce99fc81a0771571fd47018f9525c803ac73cf2e1a76e9a8c0a52",
+        "results/part3/error_examples.json": "c50664f5f13e895899fa9b5734a409829ba11743d3aafd6cef7456e9aaf48907",
+        "results/part3/part3_results.json": "a8861bb36279d55709abcbe30e4627a69deca7b4846482e9c6155488d552525c",
+        "results/part3/transformer_classifier.joblib": "959f82e6a33b5ce706115c10138fd32b96044b93732987e9d470987bfc606f03",
+        "results/supplementary/classification.json": "0fe112927cff73b2ede70af85054be04bca0beb4c7ec2f8a5fd02c9bb168a04d",
+        "results/supplementary/error_analysis.json": "5d60018a482d248251b8b59016ef66e672c6257a4232eaf595357f6dd7642099",
+        "results/supplementary/lstm_pca100_classifier.joblib": "ec88302638c9c274d7cd33135b71c98e65e5244f284a0c1a4d5ff20e1ce7437c",
+        "results/supplementary/test_predictions.npz": "3305fd26be22a5c54467bc9aa271e758ae9716a5ad87570863353bf1103536f0"
+      },
+      "feature_sha256": {
+        "results/part3/lstm_features.npz": "033c25beea9b70aa85e6f27c1584b28017481d60a20c37e84753e27c44bf3ad5",
+        "results/part3/transformer_features.npz": "a1a8f220f884eff778687d7b42adf4f806486c23700b9301dbbf7e2162276d9a"
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "model": "rnn",
+  "config": {
+    "seed": 42,
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "sequence_length": 128,
+    "batch_size": 16,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "gradient_clip": 1.0,
+    "tol": 0.0001,
+    "patience": 3
+  },
+  "architecture": {
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "num_layers": 1,
+    "nonlinearity": "tanh"
+  },
+  "best_epoch": 6,
+  "epochs_completed": 9,
+  "stop_reason": "early_stopping",
+  "context_policy": "Independent chunks; all review targets scored once; recurrent state resets between chunks.",
+  "hardware": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.12.13",
+    "torch": "2.14.0+cu130"
+  },
+  "trainable_parameters": 7231648,
+  "checkpoint_bytes": 29269031,
+  "training_seconds": 159.70790850001504,
+  "validation_seconds": 11.074645199958468,
+  "validation": {
+    "cross_entropy": 5.210856225444386,
+    "perplexity": 183.25089511936108,
+    "targets": 271132
+  },
+  "test": {
+    "cross_entropy": 5.205898754406115,
+    "perplexity": 182.34468223210345,
+    "targets": 277278
+  },
+  "generation": {
+    "temperature": 1.0,
+    "top_k": null,
+    "top_p": null,
+    "max_new_tokens": 40,
+    "stop_on_eos": true,
+    "samples": [
+      {
+        "prompt": "the movie was",
+        "continuation": "amazing , of course <unk> to this great film feels : \" too baddest since . this is one of the novel , i got half of the time . first you can understand why they can afford to them",
+        "seed": 42
+      },
+      {
+        "prompt": "i really enjoyed",
+        "continuation": "this movie to make this film in just a few days my women ! its time without resorting in , and the end result \" is at the point of the same actors . never fails 7 eventy pack .",
+        "seed": 43
+      },
+      {
+        "prompt": "the story begins with",
+        "continuation": "a similar <unk> and the third <unk> . people effects . the action shows around them fresh and look down . is another member picked up a baby of 2 - finds surf , and colors .",
+        "seed": 44
+      }
+    ]
+  },
+  "inference": {
+    "workload": "First 10000 test targets; teacher-forced scoring including log loss",
+    "targets": 10000,
+    "batch_size": 16,
+    "warmup_runs": 1,
+    "repeat_seconds": [
+      0.03855309999198653,
+      0.03882869999506511,
+      0.04033329998492263
+    ],
+    "median_seconds": 0.03882869999506511,
+    "targets_per_second": 257541.45776889104
+  }
+}

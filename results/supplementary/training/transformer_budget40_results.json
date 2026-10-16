@@ -1,0 +1,85 @@
+{
+  "model": "transformer_budget40",
+  "config": {
+    "seed": 42,
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "sequence_length": 128,
+    "batch_size": 16,
+    "epochs": 40,
+    "learning_rate": 0.001,
+    "gradient_clip": 1.0,
+    "tol": 0.0001,
+    "patience": 3
+  },
+  "architecture": {
+    "embedding_dim": 100,
+    "num_heads": 4,
+    "num_layers": 2,
+    "feedforward_dim": 400,
+    "max_length": 128,
+    "dropout": 0.1
+  },
+  "best_epoch": 22,
+  "epochs_completed": 25,
+  "stop_reason": "early_stopping",
+  "context_policy": "Independent chunks; all review targets scored once; recurrent state resets between chunks.",
+  "hardware": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.12.13",
+    "torch": "2.14.0+cu130"
+  },
+  "trainable_parameters": 4275600,
+  "checkpoint_bytes": 17454673,
+  "training_seconds": 464.58650500001386,
+  "validation_seconds": 25.595169599924702,
+  "validation": {
+    "cross_entropy": 5.320398880103257,
+    "perplexity": 204.46542291836667,
+    "targets": 271132
+  },
+  "test": {
+    "cross_entropy": 5.319514710515597,
+    "perplexity": 204.28472070716614,
+    "targets": 277278
+  },
+  "generation": {
+    "temperature": 1.0,
+    "top_k": null,
+    "top_p": null,
+    "max_new_tokens": 40,
+    "stop_on_eos": true,
+    "samples": [
+      {
+        "prompt": "the movie was",
+        "continuation": "amazing , of both <unk> version of the moon for most annoying aspects that since i saw the day and i was perfect . even half of the time i first saw pre - anti - apartheid was great ,",
+        "seed": 42
+      },
+      {
+        "prompt": "i really enjoyed",
+        "continuation": "this movie to make this film in just a middle of my teen horror movies . video can do not understand the end of \" is film because it should improve never write this film . 7 was just universal",
+        "seed": 43
+      },
+      {
+        "prompt": "the story begins with",
+        "continuation": "a chip in a successful author of a big black garcia rapes action . surprisingly <unk> of amin look down , is another member to finally shake , but i hope davis jr . i remember . . however ,",
+        "seed": 44
+      }
+    ]
+  },
+  "inference": {
+    "workload": "First 10000 test targets; teacher-forced scoring including log loss",
+    "targets": 10000,
+    "batch_size": 16,
+    "warmup_runs": 1,
+    "repeat_seconds": [
+      0.03290459999698214,
+      0.060814500000560656,
+      0.03139109999756329
+    ],
+    "median_seconds": 0.03290459999698214,
+    "targets_per_second": 303908.87599050446
+  }
+}
