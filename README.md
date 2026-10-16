@@ -7,13 +7,29 @@ Name: Dai Chenze  Student ID: A0327453A
 
 ## 1. Quick start
 
-```bash
+Use Python 3.12 and run the following commands from the project directory.
+
+**Windows PowerShell** (activation is not required):
+
+```powershell
 python -m venv .venv
-source .venv/bin/activate          # Windows PowerShell: .\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-# download glove.6B.zip, extract glove.6B.100d.txt to data/glove.6B/  (see Section 3)
-jupyter notebook Assignment.ipynb  # Restart Kernel, then Run All
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+# Download GloVe and extract glove.6B.100d.txt to data/glove.6B/ (Section 3).
+.\.venv\Scripts\python.exe -m notebook Assignment.ipynb
 ```
+
+**macOS / Linux**:
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+# Download GloVe and extract glove.6B.100d.txt to data/glove.6B/ (Section 3).
+.venv/bin/python -m notebook Assignment.ipynb
+```
+
+In the browser, select the Python kernel from this environment, restart the kernel, and choose **Run All** to reproduce the experiments.
+
+**Notebook startup dependencies:** `notebook` provides the browser interface and `python -m notebook` launcher; `ipykernel` executes Python cells. Both are included in `requirements.txt`, along with the experiment dependencies. The Notebook interface uses the supported range `notebook>=7,<8`; this is a startup dependency, not a recorded experiment package version. Internet access is needed to install dependencies and download IMDb/GloVe. Alternatively, open the notebook in VS Code with its Python and Jupyter extensions and select the `.venv` interpreter.
 
 > **Warning:** Run All retrains every model and **overwrites `results/`**. Back up the submitted results first. No API key is needed.
 
@@ -36,7 +52,7 @@ Environment used: Python 3.12.13, PyTorch 2.14.0+cu130, gensim 4.4.0, scikit-lea
 
 - **IMDb:** loaded by the notebook with `datasets.load_dataset('stanfordnlp/imdb')`. The dataset revision was not pinned; use the SHA-256 hashes in `data/reproduction_manifest.json` to verify the regenerated split. Check the dataset's usage terms.
 - **GloVe 6B 100d:** download `glove.6B.zip` from https://nlp.stanford.edu/projects/glove/ and extract `glove.6B.100d.txt` to `data/glove.6B/`. Do not use another release. The notebook checks the file before training.
-- **Code archive contents:** notebook, PDF builder, report, README, requirements, numeric results and saved test predictions. The archive excludes raw review splits, token-ID files, GloVe vectors, model checkpoints and classifier feature/model files. Download GloVe 6B 100d from the source above; the notebook regenerates the other excluded artifacts.
+- **GitHub repository contents:** notebook, PDF builder, report, README, requirements, numeric results, curves, saved predictions, review splits, token-ID files, vocabulary, trained Skip-gram vectors, and classifier features/models. Downloaded GloVe files and neural model checkpoints (`.pt`) are excluded by `.gitignore`. Download GloVe 6B 100d as described above; running the notebook regenerates checkpoints. To submit a ZIP with the same contents, export the current Git-tracked files.
 - **Full local working folder:** also retains those data, vectors, checkpoints and features. Only the 100d GloVe file is used. External vectors and checkpoints are excluded from `PACKAGE_MANIFEST.json`. The existing parent-directory ZIP predates the latest edits and must be repackaged before submission.
 
 ## 4. Preprocessing
