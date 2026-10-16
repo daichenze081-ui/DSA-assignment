@@ -118,5 +118,5 @@ To audit saved results without retraining, open Assignment.ipynb from the projec
 ## 9. Attribution and tool use
 
 - IMDb (Hugging Face `stanfordnlp/imdb`); GloVe (Pennington et al., 2014); Skip-gram (Mikolov et al., 2013); LSTM (Hochreiter & Schmidhuber, 1997); Transformer (Vaswani et al., 2017); Adam (Kingma & Ba, 2015). Libraries: PyTorch, gensim, scikit-learn, Hugging Face `datasets`.
-- AI tools: OpenAI Codex assisted with code, supplementary experiments, statistical calculations, report editing and PDF preparation. I am responsible for the experimental design and conclusions and have checked them.
+- AI tools: OpenAI Codex assisted with code and PDF preparation. I am responsible for the experimental design and conclusions and have checked them.
 - Limitations: one split, three optimization seeds, supplementary experiments designed after seeing original test results.

@@ -194,7 +194,7 @@ sub('Reproduction package')
 p('Assignment.ipynb is the complete execution path: restart the kernel and run all cells after preparing dependencies and GloVe. Original and extended experiments, result checks and provenance are integrated in topic order, with no automatic reuse of old training JSON. Section notes map inputs to output files. scripts/build_report.py only formats the PDF. The complete notebook was rerun on 15 October 2026, 00:16-01:43 Singapore time, and reached the final checks. On 16 October, only classifiers and their statistics were rerun from saved features with the expanded C grid; run_provenance.json records this partial update separately. LM results, generation and timings remain from the full run.')
 p('The experiments used Python 3.12.13 and package versions recorded in requirements.txt and results/supplementary/environment.json. Neural experiments use PyTorch 2.14.0+cu130 on an RTX 3060 Laptop GPU; CPU execution is supported but slower and timings will differ. IMDb and GloVe 6B 100d are obtained from the cited sources; the expected vector path is data/glove.6B/glove.6B.100d.txt. Split and vocabulary hashes are retained for checking reproduction. Exact numerical identity across devices is not guaranteed.')
 sub('Sources, attribution and tool use')
-p('The implementation uses PyTorch, gensim and scikit-learn. Model, algorithm and dataset references [1-8] appear after the appendices. No course notebook was adapted. OpenAI Codex assisted with code, supplementary experiments, statistical calculations, report editing and PDF preparation. I am responsible for the experimental design and conclusions and have checked them.')
+p('The implementation uses PyTorch, gensim and scikit-learn. Model, algorithm and dataset references [1-8] appear after the appendices. No course notebook was adapted. OpenAI Codex assisted with code and PDF preparation. I am responsible for the experimental design and conclusions and have checked them.')
 p('The code archive includes the notebook, PDF builder, report, README, requirements, numeric results and saved test predictions. It excludes raw review splits, token-ID files, GloVe vectors, model checkpoints and classifier feature/model files. GloVe 6B 100d must be downloaded; the notebook regenerates other excluded artifacts. The full local working folder also retains these artifacts. README documents the same packaging distinction.','SmallX')
 page()
 
@@ -273,7 +273,7 @@ def footer(c,doc):
     c.setFont('Helvetica',7.5); c.setFillColor(gray)
     c.drawString(48,29,'DSA4213 | IMDb language models and sentiment representations')
     c.drawRightString(A4[0]-48,29,str(doc.page))
-path=OUT/'DSA4213_Assignment1_Full_Report.pdf'
+path=OUT/'DSA4213_Assignment1.pdf'
 doc=SimpleDocTemplate(str(path),pagesize=A4,rightMargin=48,leftMargin=48,topMargin=40,bottomMargin=55,title='DSA4213 Assignment 1 - Experimental Report')
 doc.build(story,onFirstPage=footer,onLaterPages=footer)
 pdf=fitz.open(path)

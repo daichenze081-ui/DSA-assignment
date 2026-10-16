@@ -7,3 +7,6 @@
 .venv/
 __pycache__/
 .ipynb_checkpoints/
+
+# Local PDF layout previews
+/tmp/pdfs/

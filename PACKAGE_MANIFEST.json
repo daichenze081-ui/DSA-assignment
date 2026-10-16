@@ -1,12 +1,11 @@
 {
   "Assignment.ipynb": "4588df22be9ce99fc81a0771571fd47018f9525c803ac73cf2e1a76e9a8c0a52",
-  "README.md": "3af3b0477c73ced159962ffbc63b8872ef8a3d05705659b25a1351673e346dbc",
+  "README.md": "0f94a8479c0af744e74fbe4de6886ad99ac92174443ed40e7371e0b298078af9",
   "data/current_run_manifest.json": "6df97158c2b9b91da3c3a1ae773fd39d30364f6568b3249910c92edf42d0665d",
   "data/embeddings/embedding_metadata.json": "c18b8eaa639484a04d40c8add10916d716805f8c4ac65411f45de6ff31add1c0",
   "data/reproduction_manifest.json": "6df97158c2b9b91da3c3a1ae773fd39d30364f6568b3249910c92edf42d0665d",
   "data/split_config.json": "f4faf2be963c4644c8c5daab83699a538e07cd7794d4d70aa624705450bccd95",
   "data/vocab.json": "a39460831f57ae24a34b9093a3e650891e6edbd89bd22c50c824f6e16467881c",
-  "output/pdf/DSA4213_Assignment1_Full_Report.pdf": "8d0a4622897ef75a71841cac8d831a4958b256be17e6d942dfadb6981f985896",
   "requirements.txt": "9915237eed2c8ad0e65da6f8f4907dc33bd65d6309abf891d65a7079ccc09105",
   "results/lstm_glove_frozen_history.json": "2fe0632ff69a90e5f6fee99c0092a19074a92a34f87c21e4585b2dc094ab1493",
   "results/lstm_glove_frozen_results.json": "55041cacfcf70135b1dc858dbaa9dfc0e18397e04cbfa268ca45a85cb93c7d7c",
@@ -50,5 +49,6 @@
   "results/transformer_history.json": "24d21631076158b0fe0b1947f06f1bf3fc78c7c809175e8d5da37e9567400fdc",
   "results/transformer_results.json": "386bf81a66eb6c75b441d401d4d094e6416dfaaf2911f33b0d031380c22acb42",
   "results/trigram_results.json": "5d0eb5154f07f003be28472c2e7841ab96e6a6277714a283e0336431cd6c66c0",
-  "scripts/build_report.py": "49051881b8b490c8c5fc9aced7e7f8dd2c6c2884694a0af703132b52b3a9a3e2"
+  "scripts/build_report.py": "2facb33c851a9e2b95d00285af90119d7d09b0477460d9a8d63387a423b31eb9",
+  "output/pdf/DSA4213_Assignment1.pdf": "e40842bdfd7eb1f313e87be00d3ef005894ae51b00f1669c6463d33facc2b07b"
 }
